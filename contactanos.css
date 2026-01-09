@@ -348,19 +348,19 @@ main {
 }
 
 .visual.legal {
-  background-image: url("assets/legal.png");
+  background-image: url("assets/provi_legal.png");
 }
 
 .visual.marketing {
-  background-image: url("assets/marketing.png");
+  background-image: url("assets/provi_marketing.png");
 }
 
 .visual.administracion {
-  background-image: url("assets/administracion.png");
+  background-image: url("assets/provi_administracion.png");
 }
 
 .visual.contabilidad {
-  background-image: url("assets/contabilidad.png");
+  background-image: url("assets/provi_contavilidad.png");
 }
 
 .body {
