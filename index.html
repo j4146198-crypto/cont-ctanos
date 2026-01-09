@@ -11,15 +11,6 @@
   <script src="contactanos.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="brand">
-      <img src="assets/svaasthy-logo.png" alt="Svaasthy.">
-    </div>
-    <nav>
-      <a href="#" class="active">Contacto</a>
-    </nav>
-  </header>
-
   <main>
     <section class="hero fullscreen">
       <div class="hero-slider" aria-label="Departamentos destacados">
@@ -27,12 +18,62 @@
           <div class="hero-slide active" style="background-image: url('assets/legal.png');">
             <div class="hero-overlay">
               <span class="hero-eyebrow">Legal</span>
-              <h2>Resoluciones legales &aacute;giles</h2>
+              <h1>Resoluciones legales &aacute;giles</h1>
               <p>Contratos, cumplimiento y apoyo jur&iacute;dico inmediato.</p>
-              <button class="btn btn-primary hero-toggle" type="button" data-open="Ver informacion" data-close="Ocultar informacion">Ver informacion</button>
+              <a class="btn btn-primary" href="#contactos">Ver informacion</a>
             </div>
-            <div class="hero-info" aria-hidden="true">
-              <div class="details hero-details">
+          </div>
+          <div class="hero-slide" style="background-image: url('assets/marketing.png');">
+            <div class="hero-overlay">
+              <span class="hero-eyebrow">Marketing</span>
+              <h1>Impulsa tu marca</h1>
+              <p>Campa&ntilde;as, branding y contenidos a medida.</p>
+              <a class="btn btn-primary" href="#contactos">Ver informacion</a>
+            </div>
+          </div>
+          <div class="hero-slide" style="background-image: url('assets/administracion.png');">
+            <div class="hero-overlay">
+              <span class="hero-eyebrow">Administraci&oacute;n</span>
+              <h1>Operaci&oacute;n sin fricciones</h1>
+              <p>Procesos internos, proveedores y coordinaci&oacute;n eficiente.</p>
+              <a class="btn btn-primary" href="#contactos">Ver informacion</a>
+            </div>
+          </div>
+          <div class="hero-slide" style="background-image: url('assets/contabilidad.png');">
+            <div class="hero-overlay">
+              <span class="hero-eyebrow">Contabilidad</span>
+              <h1>Finanzas claras y al d&iacute;a</h1>
+              <p>Facturaci&oacute;n, reportes y conciliaciones sin contratiempos.</p>
+              <a class="btn btn-primary" href="#contactos">Ver informacion</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-nav">
+          <button class="hero-arrow prev" aria-label="Anterior">
+            <span class="material-symbols-rounded">chevron_left</span>
+          </button>
+          <button class="hero-arrow next" aria-label="Siguiente">
+            <span class="material-symbols-rounded">chevron_right</span>
+          </button>
+        </div>
+        <div class="hero-dots" aria-label="Controles del slider"></div>
+      </div>
+    </section>
+
+    <section id="contactos" class="contacts">
+      <div class="container">
+        <div class="hero intro">
+          <h1>Contactos por &aacute;rea</h1>
+          <p>Comun&iacute;cate con el equipo adecuado para resolver tu solicitud.</p>
+        </div>
+
+        <div class="card-stack">
+          <article class="card">
+            <div class="visual legal" aria-hidden="true"></div>
+            <div class="body">
+              <h2 class="title"><span class="material-symbols-rounded">gavel</span>Legal</h2>
+              <p class="subtitle">Contratos, cumplimiento y apoyo jur&iacute;dico inmediato.</p>
+              <div class="details">
                 <a class="detail phone" href="tel:+15551012020">
                   <span class="icon material-symbols-rounded">call</span>
                   +1 (555) 101-2020
@@ -46,18 +87,15 @@
                   Lun-Vie 9am-6pm
                 </div>
               </div>
-              <button class="btn btn-ghost hero-close" type="button">Cerrar</button>
             </div>
-          </div>
-          <div class="hero-slide" style="background-image: url('assets/marketing.png');">
-            <div class="hero-overlay">
-              <span class="hero-eyebrow">Marketing</span>
-              <h1>Impulsa tu marca</h1>
-              <p>Campa&ntilde;as, branding y contenidos a medida.</p>
-              <button class="btn btn-primary hero-toggle" type="button" data-open="Ver informacion" data-close="Ocultar informacion">Ver informacion</button>
-            </div>
-            <div class="hero-info" aria-hidden="true">
-              <div class="details hero-details">
+          </article>
+
+          <article class="card reverse">
+            <div class="visual marketing" aria-hidden="true"></div>
+            <div class="body">
+              <h2 class="title"><span class="material-symbols-rounded">campaign</span>Marketing</h2>
+              <p class="subtitle">Campa&ntilde;as, branding y contenidos a medida.</p>
+              <div class="details">
                 <a class="detail phone" href="tel:+15553034040">
                   <span class="icon material-symbols-rounded">call</span>
                   +1 (555) 303-4040
@@ -71,18 +109,15 @@
                   Lun-Vie 8am-6pm
                 </div>
               </div>
-              <button class="btn btn-ghost hero-close" type="button">Cerrar</button>
             </div>
-          </div>
-          <div class="hero-slide" style="background-image: url('assets/administracion.png');">
-            <div class="hero-overlay">
-              <span class="hero-eyebrow">Administraci&oacute;n</span>
-              <h1>Operaci&oacute;n sin fricciones</h1>
-              <p>Procesos internos, proveedores y coordinaci&oacute;n eficiente.</p>
-              <button class="btn btn-primary hero-toggle" type="button" data-open="Ver informacion" data-close="Ocultar informacion">Ver informacion</button>
-            </div>
-            <div class="hero-info" aria-hidden="true">
-              <div class="details hero-details">
+          </article>
+
+          <article class="card">
+            <div class="visual administracion" aria-hidden="true"></div>
+            <div class="body">
+              <h2 class="title"><span class="material-symbols-rounded">inventory_2</span>Administraci&oacute;n</h2>
+              <p class="subtitle">Procesos internos, proveedores y coordinaci&oacute;n eficiente.</p>
+              <div class="details">
                 <a class="detail phone" href="tel:+15555056060">
                   <span class="icon material-symbols-rounded">call</span>
                   +1 (555) 505-6060
@@ -96,18 +131,15 @@
                   Lun-Vie 9am-6pm
                 </div>
               </div>
-              <button class="btn btn-ghost hero-close" type="button">Cerrar</button>
             </div>
-          </div>
-          <div class="hero-slide" style="background-image: url('assets/contabilidad.png');">
-            <div class="hero-overlay">
-              <span class="hero-eyebrow">Contabilidad</span>
-              <h1>Finanzas claras y al d&iacute;a</h1>
-              <p>Facturaci&oacute;n, reportes y conciliaciones sin contratiempos.</p>
-              <button class="btn btn-primary hero-toggle" type="button" data-open="Ver informacion" data-close="Ocultar informacion">Ver informacion</button>
-            </div>
-            <div class="hero-info" aria-hidden="true">
-              <div class="details hero-details">
+          </article>
+
+          <article class="card reverse">
+            <div class="visual contabilidad" aria-hidden="true"></div>
+            <div class="body">
+              <h2 class="title"><span class="material-symbols-rounded">account_balance</span>Contabilidad</h2>
+              <p class="subtitle">Facturaci&oacute;n, reportes y conciliaciones sin contratiempos.</p>
+              <div class="details">
                 <a class="detail phone" href="tel:+15557078080">
                   <span class="icon material-symbols-rounded">call</span>
                   +1 (555) 707-8080
@@ -121,19 +153,9 @@
                   Lun-Vie 9am-5pm
                 </div>
               </div>
-              <button class="btn btn-ghost hero-close" type="button">Cerrar</button>
             </div>
-          </div>
+          </article>
         </div>
-        <div class="hero-nav">
-          <button class="hero-arrow prev" aria-label="Anterior">
-            <span class="material-symbols-rounded">chevron_left</span>
-          </button>
-          <button class="hero-arrow next" aria-label="Siguiente">
-            <span class="material-symbols-rounded">chevron_right</span>
-          </button>
-        </div>
-        <div class="hero-dots" aria-label="Controles del slider"></div>
       </div>
     </section>
   </main>
@@ -153,4 +175,3 @@
   </footer>
 </body>
 </html>
-

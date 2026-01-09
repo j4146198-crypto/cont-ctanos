@@ -94,7 +94,7 @@ main {
 }
 
 .hero.fullscreen {
-  min-height: calc(100vh - 72px);
+  min-height: 50vh;
   width: 100%;
   max-width: none;
   padding: 0;
@@ -105,7 +105,8 @@ main {
   position: relative;
   width: 100%;
   max-width: none;
-  height: calc(100vh - 72px);
+  height: 50vh;
+  min-height: 360px;
   border: none;
   border-radius: 0;
   box-shadow: none;
@@ -123,7 +124,7 @@ main {
   position: relative;
   flex: 0 0 100%;
   height: 100%;
-  min-height: calc(100vh - 72px);
+  min-height: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,10 +141,6 @@ main {
   inset: 0;
   background: linear-gradient(180deg, rgba(8, 12, 20, 0.5) 0%, rgba(8, 12, 20, 0.55) 50%, rgba(8, 12, 20, 0.75) 100%);
   pointer-events: none;
-}
-
-.hero-slide.info-open {
-  background-position: center 30%;
 }
 
 .hero-overlay {
@@ -170,12 +167,6 @@ main {
   line-height: 1.6;
 }
 
-.hero-slide.info-open .hero-overlay {
-  transform: translateY(-12px);
-  opacity: 0.85;
-  transition: transform 0.35s ease, opacity 0.35s ease;
-}
-
 .hero-eyebrow {
   font-weight: 700;
   color: #9bee7a;
@@ -184,38 +175,23 @@ main {
   font-size: 0.8rem;
 }
 
-.hero-info {
-  position: absolute;
-  left: clamp(16px, 6vw, 72px);
-  right: clamp(16px, 6vw, 72px);
-  bottom: clamp(16px, 6vw, 48px);
-  background: #fff;
-  color: #ebeaea;
-  border-radius: 18px;
-  padding: clamp(18px, 3vw, 28px);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  transform: translateY(120%);
-  transition: transform 0.35s ease;
-  z-index: 3;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
-}
-
-.hero-info .details {
-  text-align: left;
-}
-
-.hero-info .detail.muted {
+.contacts {
+  padding: 48px 0 72px;
+  background: #f5f7f5;
   color: #111418;
+  scroll-margin-top: 16px;
 }
 
-.hero-slide.info-open .hero-info {
-  transform: translateY(0);
+.contacts .hero p {
+  color: #5f6b7a;
 }
 
-.hero-close {
-  align-self: flex-end;
+.contacts .subtitle {
+  color: #5f6b7a;
+}
+
+.contacts .detail.muted {
+  color: #5f6b7a;
 }
 
 .btn {
@@ -338,13 +314,17 @@ main {
 
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
 }
 
 .card:hover {
@@ -360,11 +340,27 @@ main {
 }
 
 .visual {
-  display: none;
+  display: block;
+  width: 36%;
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
 }
 
-.card.reverse .visual {
-  order: initial;
+.visual.legal {
+  background-image: url("assets/legal.png");
+}
+
+.visual.marketing {
+  background-image: url("assets/marketing.png");
+}
+
+.visual.administracion {
+  background-image: url("assets/administracion.png");
+}
+
+.visual.contabilidad {
+  background-image: url("assets/contabilidad.png");
 }
 
 .body {
