@@ -372,6 +372,12 @@ main {
   justify-content: center;
 }
 
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .title {
   display: flex;
   gap: 12px;
@@ -543,6 +549,33 @@ footer {
     padding: 32px 0 48px;
   }
 
+  .card,
+  .card.reverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "visual summary"
+      "details details";
+    align-items: center;
+  }
+
+  .visual,
+  .card.reverse .visual {
+    grid-area: visual;
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .body {
+    display: contents;
+  }
+
+  .summary {
+    grid-area: summary;
+    padding: 12px 14px 10px 14px;
+    gap: 10px;
+  }
+
   .hero-slider {
     height: 40vh;
     min-height: 240px;
@@ -569,11 +602,6 @@ footer {
     padding: 24px 0 40px;
   }
 
-  .body {
-    padding: 14px;
-    gap: 10px;
-  }
-
   .card-stack {
     gap: 12px;
   }
@@ -587,8 +615,10 @@ footer {
   }
 
   .details {
+    grid-area: details;
     grid-template-columns: 1fr;
     gap: 6px;
+    padding: 0 14px 14px 14px;
   }
 
   .detail {
