@@ -557,6 +557,8 @@ footer {
       "visual summary"
       "details details";
     align-items: center;
+    column-gap: 12px;
+    row-gap: 10px;
   }
 
   .visual,
@@ -616,9 +618,32 @@ footer {
 
   .details {
     grid-area: details;
-    grid-template-columns: 1fr;
-    gap: 6px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "phone whatsapp"
+      "email email";
+    gap: 10px;
     padding: 0 14px 14px 14px;
+  }
+
+  .detail.phone {
+    grid-area: phone;
+    white-space: nowrap;
+  }
+
+  .detail.whatsapp {
+    grid-area: whatsapp;
+    justify-self: end;
+    white-space: nowrap;
+  }
+
+  .detail.email {
+    grid-area: email;
+  }
+
+  .detail {
+    gap: 8px;
+    font-size: 0.84rem;
   }
 
   .detail {
